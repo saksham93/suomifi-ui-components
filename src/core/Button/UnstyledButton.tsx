@@ -12,5 +12,5 @@ export const UnstyledButton = styled((props: ButtonProps) => {
     <Button {...passProps} className={classnames(className, baseClassName)} />
   );
 })`
-  ${props => unStyled(props)}
+  ${props => unStyled(props as any)}
 `;

@@ -76,7 +76,7 @@ export class TextInput extends Component<TextInputProps> {
 
     return (
       <HtmlLabel
-        {...labelProps}
+        {...labelProps as any}
         className={classnames(labelBaseClassName, className, {
           [disabledClassName]: !!passProps.disabled,
         })}
